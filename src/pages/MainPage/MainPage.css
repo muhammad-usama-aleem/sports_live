@@ -1,0 +1,28 @@
+.column1 {
+      display:block;
+      float: left;
+      width: 25%;
+      height: 100vh;
+}
+.column2 {
+    display:block;
+    float: right;
+    width: 75%;
+    height: 100vh;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media only screen and (max-width: 1125px){
+    .column1 {
+        display:none;
+    }
+    .column2 {
+        display:block;
+        height: 100vh;
+    } 
+}

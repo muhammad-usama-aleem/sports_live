@@ -1,0 +1,19 @@
+#container {
+    width:100vw;
+    height: 75px;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+#modules {
+    height: 100px; /* 40px - more place for scrollbar, is hidden under parent box */
+    padding:5px;
+    white-space:nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#modules a{
+    text-decoration: none !important;
+    color: black !important;
+    margin: 0 5px; 
+}

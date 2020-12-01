@@ -1,0 +1,15 @@
+body{
+    overflow-x: hidden;
+}
+.wff_widget.wff_widget_FW296FCBD176758CF8 *, .wff_widget.wff_widget_FW296FCBD176758CF8 DIV, .wff_widget.wff_widget_FW296FCBD176758CF8 SPAN {
+    font-family: Tahoma, sans-serif;
+    border-radius: 10px;
+}
+.wff_widget {
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    position: absolute;
+    top: 29%;
+    right: 0;
+    width: 98vw;
+}

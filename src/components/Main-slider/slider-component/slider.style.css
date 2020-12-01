@@ -1,0 +1,26 @@
+.module {
+    position:relative;
+    display:inline-block;
+    width: 150px;
+    height: 60px;
+    background: rgba(196, 196, 196, 0.44);
+    border-radius: 60px;
+    line-height:60px;
+    text-align:center;
+    background:#ddd;
+    overflow:hidden;
+}
+.module + .module {
+    margin-left:5px
+}
+.img{
+  display: block;
+  position:absolute;
+  top:20%;
+  left:3%;
+  padding-left: 15px;
+}
+.text{
+  display: inline;
+  margin-left: 40px;
+}
