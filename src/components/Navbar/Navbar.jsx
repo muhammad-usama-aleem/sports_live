@@ -3,15 +3,19 @@ import { Link } from "react-router-dom";
 import './Navbar.css';
 
 const Navbar = () => {
+
+    const setClick=()=>{
+    
+     window.location.href="/";
+    }
+
     return (
         <>
             <nav className="navbar">
                 <div className="nav-container">
                     <div className="nav-header">
                         <div className="logo">
-                            <Link to="/">
-                                LIVE SPORTS
-                            </Link> 
+                          <Link  to= '/' onClick={setClick}> LIVE SPORTS</Link>
                         </div>           
                     </div>
 

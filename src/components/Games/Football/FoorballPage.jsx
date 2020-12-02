@@ -12,7 +12,6 @@ window.sessionStorage.setItem('Football',true);
 class FootballPage extends React.Component {
   componentWillUnmount()
   {
- 
       window.sessionStorage.setItem('Football',true);
   }
     render() {

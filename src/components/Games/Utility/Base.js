@@ -1,6 +1,6 @@
 const Base=(a)=>
   {
-  	console.log("Base why")
+
 setTimeout(()=>{
 	if(window.sessionStorage.getItem(a)!=='false')
 	{
