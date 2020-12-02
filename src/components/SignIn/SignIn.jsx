@@ -11,13 +11,15 @@ class SignIn extends React.Component {
     }
   
     onEmailChange = (event) => {
+        console.log(event.target.value,"emial")
       this.setState({signInEmail: event.target.value});
-      console.log('email', this.state.signInEmail);
+    
     }
   
     onPasswordChange = (event) => {
+      console.log(event.target.value,"pass")
       this.setState({signInPassword: event.target.value});
-      console.log('pass', this.state.signInPassword);
+
     }
   
     onSubmitSignIn = () => {
@@ -33,10 +35,10 @@ class SignIn extends React.Component {
       })
         .then(response => response.json())
         .then(data => {
-            console.log('receive something');
+            console.log(data);
           if (data === 'success') {
             window.location.href='/';
-            alert('wrong credientials')
+        
           }
         })
     }
@@ -44,7 +46,7 @@ class SignIn extends React.Component {
     render(){
         return (
             <div>
-                  <form className="form form-login">
+                  <main className="form form-login">
                     <fieldset>
                     <legend>Please, enter your email and password for login.</legend>
                     <div className="input-block">
@@ -68,7 +70,7 @@ class SignIn extends React.Component {
                     onClick={this.onSubmitSignIn}>
                         Login
                     </button>
-                </form>        
+                </main>        
             </div>
         )
     }

@@ -54,11 +54,11 @@ class SignUp extends React.Component {
         return response.json()}
         )
         .then(user => {
-     
-          if (user) {
-            this.loadUser(user)
-            console.log(user);
-            
+          if (user==="Success") {
+           // this.loadUser(user)
+           // console.log(user); 
+           window.location.href='/';
+
           }
         })
     }
