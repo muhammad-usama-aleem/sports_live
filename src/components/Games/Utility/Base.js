@@ -4,12 +4,11 @@ const Base=(a)=>
 setTimeout(()=>{
 	if(window.sessionStorage.getItem(a)!=='false')
 	{
-
 	window.sessionStorage.setItem(a,false);
 	 window.location.reload();
 	}
 
-},3000 )
+},2000 )
 
  }
  export default Base;
