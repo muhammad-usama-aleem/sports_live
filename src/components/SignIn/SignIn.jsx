@@ -28,14 +28,14 @@ class SignIn extends React.Component {
         body: JSON.stringify({
           email: this.state.signInEmail,
           password: this.state.signInPassword,
-          time:new Date()
+
         })
       })
         .then(response => response.json())
         .then(data => {
             console.log('receive something');
           if (data === 'success') {
-            window.location = 'http://127.0.0.1:3000/';
+            window.location.href='/';
             alert('wrong credientials')
           }
         })

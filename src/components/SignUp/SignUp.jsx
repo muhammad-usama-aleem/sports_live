@@ -43,11 +43,18 @@ class SignUp extends React.Component {
         body: JSON.stringify({
           email: this.state.email,
           password: this.state.password,
-          name: this.state.name
+          name: this.state.name,
+           time:new Date()
         })
       })
-        .then(response => response.json())
+        .then(response => 
+    
+        {  
+   
+        return response.json()}
+        )
         .then(user => {
+     
           if (user) {
             this.loadUser(user)
             console.log(user);
@@ -59,7 +66,7 @@ class SignUp extends React.Component {
     render(){
         return (
             <div>
-                <form className="form form-signup">
+                <main className="form form-signup">
                     <fieldset>
                     <legend>Please, enter your email, password and password confirmation for sign up.</legend>
                     <div className="input-block">
@@ -91,7 +98,7 @@ class SignUp extends React.Component {
                     onClick={this.onSubmitSignIn}>
                         Continue
                     </button>
-                </form>                    
+                </main>                    
             </div>
         )
     }
