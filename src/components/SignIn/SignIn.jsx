@@ -29,8 +29,7 @@ class SignIn extends React.Component {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
           email: this.state.signInEmail,
-          password: this.state.signInPassword,
-
+          password: this.state.signInPassword
         })
       })
         .then(response => response.json())
@@ -38,7 +37,6 @@ class SignIn extends React.Component {
             console.log(data);
           if (data === 'success') {
             window.location.href='/';
-        
           }
         })
     }
